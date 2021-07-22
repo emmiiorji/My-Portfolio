@@ -1,7 +1,115 @@
+/* Reset */
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+} 
+
+/* Main Styling */
+html, body{
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.65em;
+    background-color: #ddd;
 }
-body{
-    background-color: #f4f;
+h1{
+    padding-bottom: 20px;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1000px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/* header {
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    flex-flow: row wrap;
+} */
+
+#navbar{
+    
+    background-color: #333;
+    /* flex-flow: row wrap; */
+    /* list-style: none; */
+    /* list-style: none; */
+    /* display: inline; */
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px
+}
+
+#navbar ul a{
+    /* display: block; */
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    /* background-color: yellow; */
+    
+}
+
+#navbar ul a:hover,
+#navbar ul a.current {
+
+    background: #5a5a5a;
+    color: #f7c08a;
+    padding: 20px 10px;
+    /* padding-bottom: 30px; */
+}
+
+#navbar h1{
+    padding-top: 20px;
+}
+
+.banner {
+    /* width: 100%; */
+    height: 700px;
+    background: url(img/pexels-negative-space-160107.jpg) no-repeat center center/cover #6f6e6c;
+    color: white;
+    
+}
+
+.color-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+/* main{
+    height: 600px;
+    background: url(img/pexels-negative-space-160107.jpg) no-repeat center center/cover;
+    /* background-size: 100%; */
+} */
+
+/* @media all and (max-width: 800px) {
+    .navbar {
+        justify-content: space-around;
+    }
+} */
