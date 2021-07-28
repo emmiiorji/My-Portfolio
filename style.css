@@ -14,7 +14,7 @@ html, body{
     background-color: #ddd;
 }
 h1{
-    padding-bottom: 20px;
+    padding-bottom: 2%;
 }
 a{
     color: white;
@@ -24,11 +24,12 @@ a{
 
 .container{
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: auto;
     max-width: 1000px;
     overflow: auto;
-    padding: 0 20px;
+    padding: 0 2%;
 }
 
 /* header {
@@ -50,18 +51,19 @@ a{
 #navbar ul{
     list-style: none;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px
+    padding: 2%
 }
 
 #navbar ul a{
     /* display: block; */
     color: white;
     text-decoration: none;
-    text-align: center;
-    padding: 10px;
+    /* text-align: center; */
+    padding: 20px 10px 20px 10px;
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
     /* background-color: yellow; */
     
 }
@@ -71,7 +73,7 @@ a{
 
     background: #5a5a5a;
     color: #f7c08a;
-    padding: 20px 10px;
+    /* padding: 20px 10px; */
     /* padding-bottom: 30px; */
 }
 
@@ -105,11 +107,44 @@ footer{
 /* main{
     height: 600px;
     background: url(img/pexels-negative-space-160107.jpg) no-repeat center center/cover;
-    /* background-size: 100%; */
+     background-size: 100%;
 } */
 
-/* @media all and (max-width: 800px) {
-    .navbar {
-        justify-content: space-around;
+ @media screen and (max-width: 715px) {
+
+    /* #navbar ul a{
+        font-size: 16px;
+    }  */
+
+    /* #navbar ul{
+        flex-direction: column;
+    } */
+}
+
+@media all and (max-width: 740px) {
+    .container {
+        /* flex-flow: column wrap; */
+        display: block;
+        text-align: center; 
+        padding: 0;
     }
-} */
+    #navbar ul{
+        display: block;
+        /* flex-flow: column wrap; */
+        text-align: center; 
+        /* padding: 10px; */
+        /* border-top: 1px solid rgba(255, 255, 255,0.3);  */
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    #navbar ul a{
+        /* flex-flow: column wrap; */
+        display: block;
+        text-align: center; 
+        padding: 1%;
+        border-top: 1px solid rgba(255, 255, 255,0.3); 
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    #navbar li:last-of-type a {
+        border-bottom: none;
+    }
+  }
