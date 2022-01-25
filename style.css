@@ -63,7 +63,7 @@ p {
 	background-color: crimson;
 }
 .brand h1 {
-	font-size: 3rem;
+	font-size: 1.35rem;
 	text-transform: uppercase;
 	color: white;
 }
@@ -227,21 +227,32 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 1rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
 #hero h1:nth-child(1) {
+	font-size: 2rem;
 	animation-delay: 1s;
 }
 #hero h1:nth-child(2) {
+	font-size: 2rem;
+	display: inline;
 	animation-delay: 2s;
 }
 #hero h1:nth-child(3) {
+	font-size: 2rem;
+	display: inline;
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
+}
+#hero h1:nth-child(4) {
+	font-size: 1.5rem;
+	/* color: white; */
+	animation: text_reveal_desc 0.5s ease forwards;
+	animation-delay: 4s;
 }
 #hero h1 span {
 	position: absolute;
@@ -261,6 +272,9 @@ p {
 }
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
+}
+#hero h1:nth-child(4) span {
+	animation-delay: 3.5s;
 }
 
 /* End Hero Section */
@@ -569,6 +583,12 @@ p {
 @keyframes text_reveal_name {
 	100% {
 		color: crimson;
+		font-weight: 500;
+	}
+}
+@keyframes text_reveal_desc {
+	100% {
+		color: white;
 		font-weight: 500;
 	}
 }
