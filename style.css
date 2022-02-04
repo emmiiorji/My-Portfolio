@@ -419,6 +419,22 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
+#projects .projects .all-projects .project-item .project-info a{
+	display: inline-block;
+	background: crimson;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 16px;
+	margin-top: 20px;
+	border-radius: 6px;
+	border: 2px solid rgb(155, 145, 147);
+	transition: all 0.3s ease;
+}
+#projects .all-projects .project-info a:hover{
+	color: crimson;
+	background: none;
+}
 /* End Projects section */
 
 /* About Section */
